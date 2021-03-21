@@ -22,7 +22,7 @@ class modal extends Component {
                         <Modal.Title>Add Review</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <textarea placeholder="type your review"></textarea>
+                        <textarea placeholder="Add your review"></textarea>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="primary" onClick={this.closeModal}>
