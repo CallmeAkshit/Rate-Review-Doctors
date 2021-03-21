@@ -43,7 +43,7 @@ class login extends Component {
                     <Modal.Footer>
                         <Button
                             variant="primary"
-                            type="submit">
+                            type="submit" onClick={this.closeModal}>
                             Submit
                         </Button>
                     </Modal.Footer>
