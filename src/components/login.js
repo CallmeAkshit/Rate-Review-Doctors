@@ -6,11 +6,6 @@ class login extends Component {
         isOpen: false,
     };
 
-    state = { name: null };
-
-    state = { password: null };
-
-    handleChange = (e) => this.setState({ name: e.target.value });
 
     openModal = () => this.setState({ isOpen: true });
 
