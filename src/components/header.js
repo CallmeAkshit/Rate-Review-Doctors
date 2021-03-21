@@ -6,7 +6,7 @@ function header() {
         <div>
             <header className="content">
                 <img src={logo} className="logo" alt="logo" />
-                <a href="#" className="nav-links-first">
+                <a href="/" className="nav-links-first">
                     Home
                 </a>
                 <Login />

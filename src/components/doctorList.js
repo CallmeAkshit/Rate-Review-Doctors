@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import doctor from './doctor.svg';
 import Modal from './modal';
 
-function DoctorList() {
+function DoctorList(props) {
     const ratingChanged = (newRating) => {
         // eslint-disable-next-line no-console
         console.log(newRating);
@@ -21,10 +21,11 @@ function DoctorList() {
                 <div class="col-md-8">
                     <div class="card-body">
                         <div>
-                            <h5 class="card-title">Doctor Name</h5>
+                            <h5 class="card-title">{props.name}</h5>
+                            <h5 class="card-text">{props.speciality}</h5>
                             <ReactStars count={5} onChange={ratingChanged} size={24} activeColor="#ffd700" />
                         </div>
-                        <p class="card-text">Doctor Deatils will be showed here.</p>
+                        <p class="card-text">{props.details}</p>
                         <Modal />
                         <Button variant="info" className="btn" onClick={handleClick}>
                             View Reviews
