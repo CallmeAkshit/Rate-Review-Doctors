@@ -37,19 +37,17 @@ class login extends Component {
                             />
                             <Form.Label>Password: </Form.Label>
                             <Form.Control
-                                type="text"
+                                type="password"
                                 onChange={this.handleChange}
                                 value={this.state.password}
-                                placeholder="Please Enter the Password"
+                                placeholder="Enter the Password"
                             />
                         </Form.Group>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button
                             variant="primary"
-                            type="submit"
-                            onClick={() => this.props.handleSubmit(this.state.name, this.state.password)}
-                        >
+                            type="submit">
                             Submit
                         </Button>
                     </Modal.Footer>
