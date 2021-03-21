@@ -31,15 +31,11 @@ class login extends Component {
                             <Form.Label>Name: </Form.Label>
                             <Form.Control
                                 type="text"
-                                onChange={this.handleChange}
-                                value={this.state.name}
-                                placeholder="Please Enter the UserName"
+                                placeholder="Enter the UserName"
                             />
                             <Form.Label>Password: </Form.Label>
                             <Form.Control
                                 type="password"
-                                onChange={this.handleChange}
-                                value={this.state.password}
                                 placeholder="Enter the Password"
                             />
                         </Form.Group>
